@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="order" value="2"/>-->
+        <!--<property name="ignoreUnresolvablePlaceholders" value="true" />-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath:config/jdbc.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="fileEncoding" value="utf-8"/>-->
+    <!--</bean>-->
+    
+    <context:component-scan base-package="ucs.jobschedule.impl" >
+        <context:include-filter type="regex" expression=".*Manager"/>
+        <context:include-filter type="regex" expression=".*Handler"/>
+    </context:component-scan>
+
+
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="30"/>
+        <property name="maxIdle" value="10"/>
+        <property name="maxWait" value="1000"/>
+        <property name="defaultAutoCommit" value="true"/>
+        <property name="validationQuery" value="select 1"/>
+    </bean>
+    <!--<bean id = "jdbcTemplate" class = "org.springframework.jdbc.core.JdbcTemplate">-->
+    <!--<property name = "dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+    <bean id="namedParamsJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource">
+            <ref local="dataSource"/>
+        </property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+
+    <!--任务执行器配置-->
+    <bean id="shellTaskExecutor" class="ucs.jobschedule.impl.executor.ShellTaskExecutor"/>
+    <bean id="batTaskExecutor" class="ucs.jobschedule.impl.executor.BatTaskExecutor"/>
+    <bean id="sqlTaskExecutor" class="ucs.jobschedule.impl.executor.SQLTaskExecutor"/>
+    <bean id="taskExecutorFactory" class="ucs.jobschedule.impl.executor.TaskExecutorFactory">
+        <property name="taskExecutorMap">
+            <map>
+                <entry key="SHELL" value-ref="shellTaskExecutor"/>
+                <entry key="SQL" value-ref="sqlTaskExecutor"/>
+                <entry key="BAT" value-ref="batTaskExecutor"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

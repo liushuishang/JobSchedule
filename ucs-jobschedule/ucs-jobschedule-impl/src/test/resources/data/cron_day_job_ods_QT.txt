@@ -1,0 +1,75 @@
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_bankaccount_QT           >> /opt/kettle/data-integration/run_script/log/j_t_ods_bankaccount_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_financing_QT             >> /opt/kettle/data-integration/run_script/log/j_t_ods_financing_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_user_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_ods_user_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_investment_order_QT      >> /opt/kettle/data-integration/run_script/log/j_t_ods_investment_order_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_guarantee_QT             >> /opt/kettle/data-integration/run_script/log/j_t_ods_guarantee_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_order_runningno_QT       >> /opt/kettle/data-integration/run_script/log/j_t_ods_order_runningno_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_ods_project_content_QT       >> /opt/kettle/data-integration/run_script/log/j_t_ods_project_content_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_tradedetail_QT               >> /opt/kettle/data-integration/run_script/log/j_t_tradedetail_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_uchildaccount_QT             >> /opt/kettle/data-integration/run_script/log/j_t_uchildaccount_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_uaccountin_QT                >> /opt/kettle/data-integration/run_script/log/j_t_uaccountin_QT.out &
+
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_workday_QT                   >> /opt/kettle/data-integration/run_script/log/j_t_workday_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_supportbank_QT               >> /opt/kettle/data-integration/run_script/log/j_t_supportbank_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_uaccountoutdetail_QT         >> /opt/kettle/data-integration/run_script/log/j_t_uaccountoutdetail_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_uaccountout_QT               >> /opt/kettle/data-integration/run_script/log/j_t_uaccountout_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_everydayrate_QT              >> /opt/kettle/data-integration/run_script/log/j_t_everydayrate_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_everydayincome_QT            >> /opt/kettle/data-integration/run_script/log/j_t_everydayincome_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_channelconfig_QT             >> /opt/kettle/data-integration/run_script/log/j_t_channelconfig_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_uaccount_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_uaccount_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_corpuser_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_corpuser_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_managerscore_QT              >> /opt/kettle/data-integration/run_script/log/j_t_managerscore_QT.out &
+
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_corp_QT                      >> /opt/kettle/data-integration/run_script/log/j_t_corp_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_activities_QT                >> /opt/kettle/data-integration/run_script/log/j_t_activities_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_activitiespause_QT           >> /opt/kettle/data-integration/run_script/log/j_t_activitiespause_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_qt_discountorder_QT          >> /opt/kettle/data-integration/run_script/log/j_t_qt_discountorder_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_settlementlog_QT             >> /opt/kettle/data-integration/run_script/log/j_t_settlementlog_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_whitelistnolog_QT            >> /opt/kettle/data-integration/run_script/log/j_t_whitelistnolog_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_sendkey_QT                >> /opt/kettle/data-integration/run_script/log/j_t_rp_sendkey_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_bank_QT                      >> /opt/kettle/data-integration/run_script/log/j_t_bank_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_autopushconfig_QT            >> /opt/kettle/data-integration/run_script/log/j_t_autopushconfig_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_autopushconfigdetail_QT      >> /opt/kettle/data-integration/run_script/log/j_t_autopushconfigdetail_QT.out &
+
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_messageexpire_QT             >> /opt/kettle/data-integration/run_script/log/j_t_messageexpire_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_qt_financing_QT              >> /opt/kettle/data-integration/run_script/log/j_t_qt_financing_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_discountcashlist_QT          >> /opt/kettle/data-integration/run_script/log/j_t_discountcashlist_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_wc_user_QT                >> /opt/kettle/data-integration/run_script/log/j_t_rp_wc_user_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_feedback_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_feedback_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_activitycropuser_QT       >> /opt/kettle/data-integration/run_script/log/j_t_rp_activitycropuser_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_activitybonustotal_QT        >> /opt/kettle/data-integration/run_script/log/j_t_activitybonustotal_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_activitybonus_record_QT      >> /opt/kettle/data-integration/run_script/log/j_t_activitybonus_record_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_bankaccount_QT               >> /opt/kettle/data-integration/run_script/log/j_t_bankaccount_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_userbonus_QT                 >> /opt/kettle/data-integration/run_script/log/j_t_userbonus_QT.out &
+
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_userbonus_record_QT          >> /opt/kettle/data-integration/run_script/log/j_t_userbonus_record_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_loginhistory_QT              >> /opt/kettle/data-integration/run_script/log/j_t_loginhistory_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_redpacket_QT              >> /opt/kettle/data-integration/run_script/log/j_t_rp_redpacket_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_messagesubscribe_QT          >> /opt/kettle/data-integration/run_script/log/j_t_messagesubscribe_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_bonuspool_QT              >> /opt/kettle/data-integration/run_script/log/j_t_rp_bonuspool_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_wxfriend_QT               >> /opt/kettle/data-integration/run_script/log/j_t_rp_wxfriend_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_wc_sharefriend_QT         >> /opt/kettle/data-integration/run_script/log/j_t_rp_wc_sharefriend_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_mobilemodhistory_QT          >> /opt/kettle/data-integration/run_script/log/j_t_mobilemodhistory_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_userauth_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_userauth_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_branchbankinfo_QT            >> /opt/kettle/data-integration/run_script/log/j_t_branchbankinfo_QT.out &
+
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_subjectuser_QT               >> /opt/kettle/data-integration/run_script/log/j_t_subjectuser_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_user_activitybonus_QT        >> /opt/kettle/data-integration/run_script/log/j_t_user_activitybonus_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_user_QT                      >> /opt/kettle/data-integration/run_script/log/j_t_user_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_userthirdbind_QT             >> /opt/kettle/data-integration/run_script/log/j_t_userthirdbind_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_choiceproject_QT             >> /opt/kettle/data-integration/run_script/log/j_t_choiceproject_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_messagesystem_QT             >> /opt/kettle/data-integration/run_script/log/j_t_messagesystem_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_sendkeydetail_QT          >> /opt/kettle/data-integration/run_script/log/j_t_rp_sendkeydetail_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_cashlist_QT               >> /opt/kettle/data-integration/run_script/log/j_t_rp_cashlist_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_activityrecord_QT         >> /opt/kettle/data-integration/run_script/log/j_t_rp_activityrecord_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_rp_apply_QT                  >> /opt/kettle/data-integration/run_script/log/j_t_rp_apply_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_bainterceptlog_QT            >> /opt/kettle/data-integration/run_script/log/j_t_bainterceptlog_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_subjectnews_QT               >> /opt/kettle/data-integration/run_script/log/j_t_subjectnews_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_subject_QT                   >> /opt/kettle/data-integration/run_script/log/j_t_subject_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_subscribe_QT                 >> /opt/kettle/data-integration/run_script/log/j_t_subscribe_QT.out &
+nohup ${KETTLE_PATH}/kitchen.sh -rep UCSETL_DEV_ODS -user admin -pass admin -dir /ODS/job/ -job j_t_comment_QT                   >> /opt/kettle/data-integration/run_script/log/j_t_comment_QT.out &
+
+
+
+
+
